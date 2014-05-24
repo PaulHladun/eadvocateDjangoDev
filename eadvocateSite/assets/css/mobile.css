@@ -1,0 +1,362 @@
+
+
+/* Mobile CSS
+   ================================================
+   eAdvocate Ltd.
+   Copyright 2013
+
+   http://www.eadvocate.com/
+
+   Design and code by Paul Hladun
+   
+   ================================================*/
+
+/* Phone - Landscapte and Portrait
+================================================== */	    
+@media (max-width: 480px) 
+
+{
+	
+/* Banners, Backgrounds and Overlays
+================================================== 
+==================================================*/	
+	
+/* Banners - All Pages
+=================================== */	
+
+	.bannerHome, .bannerHowWeHelp, .bannerFindCare, .bannerFindWork {
+		background: url(../images/index/homeBanner2.jpg) center center no-repeat;
+	   	height: 360px;
+	}
+	
+	.bannerHome {
+		background: url(../images/index/homeBanner2Mobile.jpg) center center no-repeat;
+	}
+	
+	.bannerHowWeHelp {
+		background: url(../images/howWeHelp/howWeHelpBannerMobile.jpg) center center no-repeat;
+	}
+	
+	.bannerFindCare {
+		background: url(../images/findCare/findCareBannerMobile.jpg) center center no-repeat;
+	}
+		
+	.bannerFindWork {
+		background: url(../images/findWork/findWorkBannerMobile.jpg) center center no-repeat;
+	}
+	
+	.bannerIndex h1 {
+		margin: 30px 0 10px 0;
+	}
+	
+	.bannerIndex h4 {
+		font-size: 1.1em;
+	}
+	
+	.banner h1 {
+		font-size: 2.2em;
+		line-height: 35px;
+		margin-top: 100px;
+	}
+	
+	.banner h2 {
+		font-size: 1.3em;
+		line-height: 30px;
+		margin-top: 10px;
+	}
+	
+	.banner h4 {
+		margin-top: 10px;
+	}
+
+/* How We Help Banners
+=================================== */	
+
+	.howWeHelpLG1 {
+		background: url(../images/howWeHelp/howWeHelpLG1_Mobile.jpg) center center no-repeat;
+	  	margin-bottom: 30px;
+	}
+
+/* Find Work Banners
+=================================== */	
+
+	.findWorkLG1 {
+		background: url(../images/findWork/findWorkLG1_Mobile.jpg) center center no-repeat;
+	  	height: 360px;
+	}
+	
+	.findWorkLG3 {
+		background: url(../images/findWork/findWorkLG3_Mobile.jpg) center center no-repeat;
+	  	height: 360px;
+	}
+	
+/* Find Care Banners
+=================================== */	
+
+	.findCareLG1 {
+		background: url(../images/findCare/findCareLG1_Mobile.jpg) center center no-repeat;
+   		height: 360px;
+		padding-top: 100px;
+	}
+	
+	.findCareLG2 {
+		background: url(../images/findCare/findCareLG2_Mobile.jpg) center center no-repeat;
+   		height: 360px;
+	}
+
+	.findCareLG3 {
+		background: url(../images/findCare/findCareLG3_Mobile.jpg) center center no-repeat;
+	  	height: 360px;
+	}
+
+/* Overlays
+=================================== */	
+	
+	.overlayBanners {
+	  	min-height: 360px;
+	}
+	
+	.overlayLG, .overlayLG2, .overlayGreyBlue, .overlayGreyPink, .overlayWhite {
+	  	min-height: 360px;
+	}
+	
+	.overlayLG {
+		background: rgba(20,20,20,0.1) center center no-repeat;
+	}
+	
+	.overlayGreyBlue {
+		background: rgba(10,158,172,0.6) center center no-repeat;
+	}
+	
+	.overlayGreyPink {
+		background: rgba(208,46,84,0.5) center center no-repeat;
+	}
+	
+	.overlayWhite {
+		background: rgba(225,225,225,0.3) center center no-repeat;
+	}
+	
+	.overlay520 {
+		padding-top: 14px;
+	}	
+	
+/* Header and Navigation
+================================================== */	
+
+	.headerAction {
+		font-size: 0.9em;
+	}
+
+	.headerAction ul {
+		margin: 14px auto;
+	}
+	
+	.headerAction li, .headerAction li a {
+		padding: 20px 0 0 10px;	
+	}
+	
+/* Button and Link Styles
+=============================== */	
+
+	a.infoLink, a.infoLinkAlt, a.edit, a.discuss {
+		font-size: 1.3em;
+		margin: 5px auto;
+	}
+	
+	button {
+		width: 130px;
+		height: 38px;
+		font-size: 0.8em;
+		margin: 20px 0;
+	}
+	
+/* Font - Specific Class Styles: All Fonts
+================================================== */	
+	
+	.whiteMobile {
+		color: white;
+	}
+
+/*  Bursary, Contact, and Community
+================================================== */	
+
+	.titleFind {
+		margin-bottom: 10px;
+		padding-bottom: 5px;
+		border-bottom: 4px solid #0A93A1;
+	}
+	
+	.findParagraphDiv {
+		min-height: 160px;
+	}
+	
+	.findButton {
+		min-height: 75px;
+		overflow: hidden;
+	}
+	
+	.findCare button, .findWork button {
+		margin: auto;
+	}
+	
+	.shareTheCare {
+		min-height: 300px;
+		margin-bottom: 10px;
+		padding-top: 10px;
+	}
+	
+	.contact {
+		background: #0A93A1;
+		min-height: 400px;
+		margin-bottom: 10px;
+		padding-top: 60px;
+	}
+
+	.contact h1 {
+		font-size: 2.8em;
+	}	
+	
+	.communityBG {
+		background: url(../images/communityBG_Mobile.jpg) #fff center  center no-repeat;	
+	}
+	
+	.community {
+		position: relative;
+		min-height: 300px;
+		margin-bottom: 10px;
+	}
+	
+	.communityTextBG {
+		background: rgba(20,20,20,0.3) center center no-repeat;	
+	  	height: 100px;
+	  	position: absolute;
+	  	top: 0;
+	}
+	
+	.community h1 {
+	  	font-size: 2.9em;	
+	  	line-height: 40px;
+	  	margin: 0;
+	}
+	
+	.community h2 {
+	  	font-size: 1.9em;	
+	  	line-height: 28px;
+	  	margin: 0;
+	}
+	
+	.community h3 {	
+  		font-size: 1.3em;
+	  	line-height: 28px;	
+	  	margin: 15px 0 0 0;
+}
+	
+	.blueBorderDiv {
+		min-height: 50px;
+	}
+	
+	.blueBorder {
+		border-bottom: 3px solid #0A93A1;
+	}
+	
+/* Find Work Page
+================================================== */	
+
+	.findWorkNegotiateBG {
+		background: rgba(255,255,255,0.7);
+		height: 60px;
+		padding: 20px 10px 10px 10px;
+	}
+
+/* Find Care Page
+================================================== */	
+
+	.findCareSubHeadingDiv {
+		min-height: 39px;
+	}
+	
+/* Font Styles
+================================================== */	
+
+	h1, h2, h3, h4, h5, h6, p, q, blockquote {
+		xtext-align: center;
+	}
+		
+	h1 {
+	  	font-size: 2.6em;	
+	  	line-height: 46px;
+	}
+	
+	h2 {
+	  	font-size: 1.8em;	
+	}
+	
+	h3 {
+		font-size: 1.3em;
+	}
+	
+	h4 {
+		font-size: 1.2em;
+	}
+	
+	h5 {
+		font-size: 1.2em;
+	}
+	
+	h6 {
+		font-size: 1.1em;
+	}
+	
+	p {	
+		font-size: 1em;
+		line-height: 20px;
+		margin: 0 0 15px 0;
+	}
+	
+	q, blockquote {
+		font-size: 1em;	
+		margin-bottom: 15px;
+	}
+	
+	.mobileWhiteText {
+		color: white;
+	}
+		
+/* Footer
+================================================== */	
+
+	footer {
+		font-size: 0.92em;
+	}
+	
+	footer li a {
+		padding: 0 0 5px 0;
+	}
+	
+	footer h5, footer h5 a {
+		font-size: 1em;
+		padding-bottom: 0;
+	}
+	
+	footer h6 {
+		font-size: 0.9em;
+	}
+	
+	.rightBorder {
+		border-left: none;
+		padding-left: 16px;
+	}
+	
+/* Hide Content
+================================================== */		
+
+	.hideContent {
+		display: none;
+	}
+
+	.hideMobile {
+		display: none;
+		padding: 0;
+	}
+
+}

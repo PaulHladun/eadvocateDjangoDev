@@ -1,0 +1,15 @@
+/* Desktop and Tablet - Landscape to Portrait
+================================================== */	  
+@media (min-width: 800px) and (max-width: 1100px)
+
+{ ... }
+
+/* Phone Landscape and Tablet Portrait
+================================================== */	  
+@media (min-width: 480px) and (max-width: 800px)
+
+{
+
+	
+		
+}

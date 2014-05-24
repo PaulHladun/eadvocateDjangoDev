@@ -1,0 +1,265 @@
+{% load static from staticfiles %}
+<!doctype html>
+<html lang="en">
+<html lang="{{ LANGUAGE_CODE|slice:"2" }}">
+	
+{% block head %}
+<head>
+	<meta charset="utf-8" />
+    <title>{% block head-title %}eAdvocate &middot; The Caring Marketplace{% endblock %}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Basic Site Metas
+  ================================================== -->	
+    {% block meta %}
+	<meta name="title" content="eAdvocate">
+	<meta name="description" content="/">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="keywords" content="responsive design, responsive, web design, ux, ia, ui, user experience, information architecture, user interface, digital design, layout design,
+	product design, design, design strategy, mobile, tablet, desktop, project management, agile, agile project management, graphic layout, graphic design, scenario, scenario 	development, user stories, user story, user journey, industrial design"/>
+	
+	<meta name="author" content="Paul Hladun">
+	<meta name="Copyright" content="Copyright Paul Hladun 2013. All Rights Reserved.">
+	{% endblock %}	
+		
+	<!-- CSS Stylesheets
+  ================================================== -->
+    {% block css %}
+	<link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{% static 'css/grid.css' %}" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{% static 'css/nav.css' %}" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{% static 'css/tablet.css' %}" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{% static 'css/mobile.css' %}" type="text/css" media="screen" />
+	{% endblock %}	
+	
+	<!-- Javascript
+  ================================================== -->
+    {% block javascript %}    
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+    <script src="{% static 'js/modernizr.custom.45114.js' %}"></script>
+    <script src="{% static 'js/functions.js' %}"></script>
+    <script src="{% static 'js/jquery-ui-1.10.4.min.js' %}"></script>
+    <script src="{% static 'js/select2.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui-timepicker-addon.js' %}"></script>
+    <script src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
+    <script src="{% static 'js/fullcalendar.min.js' %}"></script>
+        <script>
+        $(function() {
+            $(':input.selectmultiple').select2();
+            $('.dateinput').datepicker();
+            $('.timeinput').timepicker({timeFormat: 'hh:mm tt'});
+            $('.phoneinput').mask('(999) 999-9999');
+        });
+    </script>
+    {% endblock %}
+    
+	<!-- Web Fonts
+  ================================================== -->	
+	{% block webfonts %}
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300italic,400italic,700,700italic,900,900italic,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	{% endblock %}		
+
+	{% block html5shim %}	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    {% endblock %}
+    
+    {% block favicons %}
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57" href="images/icon57.jpg">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/icon72.jpg">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icon114.jpg">
+	{% endblock %}
+	
+</head>
+{% endblock %}
+
+{% block body %}
+<body>
+{% block header %}	
+<!-- Header
+================================================== -->
+<div id="top" class="anchor"><!-- filler --></div>
+
+<header>
+	<div class="gridWrap1200">
+		<div class="gridHeader-50">
+			<a href="{% url 'index' %}"><img src="{% static 'images/eadvocateLogo.png' %}" class="logo" title="eAdvocate Logo" alt="eAdvocate"></a>	
+		</div>
+		
+		<div class="gridHeader-50">
+			<div class="headerAction">
+				<ul>
+					<li><a href="#" class="login">My Account</a></li>
+					<li><a href="#" class="join">Join Free</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>		
+</header>
+{% endblock %}	
+{% block navigation %}
+<!-- Main Navigation
+================================================== -->	
+<nav class="stickNav">
+	<div class="gridWrapNav">
+		<div class="gridWrapNav-100">
+			<ul>
+				<li><a href="{% url 'howWeHelp' %}" title="How We Help">How We Help</a></li>
+				<li><a href="{% url 'findCare' %}" title="Find Care">Find Care</a></li>
+				<li><a href="{% url 'findWork' %}" title="Find Work">Find Work</a></li>
+			</ul>
+		</div>
+	</div>		
+</nav>
+{% endblock %}
+{% block content %}
+{% endblock %}
+{% block share %}
+<!-- Section - Share The Care
+================================================== -->	
+<div class="shareTheCare">
+	<div class="gridWrap860">
+		<div class="grid-100 centerText">
+			<a href="index.html"><img src="{% static 'images/shareTheCareImage.png' %}" class="centerContent" alt="Photo of woman making heart with hands."></a>
+			<h2 class="centerText">Share the care!</h2>
+			<p>Every time you use eAdvocate you help care for those who may not be able to afford urgent health and social service care while helping the ones you love! Learn more about eAdvocates charitable bursary program.</p>
+			<a href="#" class="infoLinkAlt">Learn More</a>
+		</div>
+	</div>	
+</div>
+{% endblock %}
+{% block contact %}
+<!-- Section - Contact
+================================================== -->	
+<div class="contact">
+	<div class="gridWrap1140">
+		<div class="grid-100">
+			<a href="index.html"><img src="{% static 'images/contactImage.png' %}" class="centerContent" alt="Image of Conversation bubbles"></a>
+			<h1 class="">Have any questions or feedback?</h1>
+			<h4 class="">Call us Toll-free at:</h4>
+			<h2 class=""><a href="tel:180007757775">1-800-775-7775</a></h2>
+		</div>
+	</div>	
+</div>
+{% endblock %}
+<!-- Section - Community
+================================================== -->	
+{% block community %}
+<section class="community communityBG">
+	<div class="overlayCommunity">	
+		<div class="gridWrap1200">
+			<div class="grid-100">
+				<h1 class="">The eAdvocate Community</h1>
+				<h3 class=" light">At eAdvocate, we have bought together thousands of people to create a safe and trusted healthcare community.</h3>
+			</div>
+		</div>	
+	
+		<div class="gridWrap1200">
+			<div class="grid-1-3-2">
+				<h2>275,114</h2>
+				<h4>Care Professionals</h4>
+			</div>
+			<div class="grid-1-3-2">
+				<h2>314,666</h2>
+				<h4>Seeking Care</h4>
+			</div>
+			<div class="grid-1-3-2">
+				<h2>555,777</h2>
+				<h4>Hours Clocked</h4>
+			</div>
+		</div>	
+	</div>
+</section>
+{% endblock %}
+<!-- Footer
+================================================== -->	
+{% block footer %}
+<footer>
+	<div class="gridWrap960">
+		<div class="grid-16">
+			<h5>Navigation</h5>
+			<ul>
+				<li><a href="#">How We Help</a></li>
+				<li><a href="#">Find Care</a></li>
+				<li><a href="#">Find Work</a></li>
+			</ul>	
+			</div>
+			<div class="grid-16">
+			<h5>About Us</h5>
+			<ul>
+				<li><a href="#">Our Story</a></li>
+				<li><a href="#">eAdvocate Team</a></li>
+				<li><a href="#">Share the Care</a></li>
+			</ul>	
+			</div>
+			<div class="grid-16">
+			<h5>Media</h5>
+			<ul>
+				<li><a href="#">Press/News</a></li>
+				<li><a href="#">Who's talking about eAdvocate</a></li>
+			</ul>	
+			</div>
+			<div class="grid-16">
+			<h5>Support</h5>
+			<ul>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Common Questions</a></li>
+				<li><a href="#">TIPS</a></li>
+				<li><a href="#">Site Map</a></li>
+				<li><a href="#">Terms of Use</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Search</a></li>
+			</ul>	
+		</div>
+		<div class="grid-31 rightBorder">
+			<h5>eAdvocate Corporate Office</h5>
+			<h6>206A-146 Laird Drive</h6>
+			<h6>Toronto, Ontario</h6>
+			<h6>M4G 3V7</h6>
+			<br>
+			<h5><a href="mailto:info@eadvocate.com">info@eadvocate.com</a></h5>
+			<h5 class="whiteText"><a href="tel:180007757775">1-800-775-7775</a></h5>
+		</div>
+	</div>
+	
+	<div class="gridWrap960">
+		<div class="grid-100">
+			<div class="top">
+				<a href="#top" class="top scroll">Back to Top</a>
+			</div>			
+		</div>
+	</div>
+	
+	<div class="gridWrap960">
+		<div class="grid-75">
+			<a href="{% url 'index' %}"><img src="{% static 'images/logoBW.png' %}" class="logo" title="eAdvocate Logo" alt="eAdvocate Logo"></a>
+		</div>	
+		<div class="grid-25 hideContent"><!-- filler -->
+		</div>			
+	</div>		
+	
+	<div class="gridWrap960">
+		<div class="grid-100">
+			<h6>&copy; 2013 eAdvocate Inc.  All Rights Reserved.</h6>
+		</div>			
+	</div>		
+	
+</footer>
+{% endblock %}
+</body>
+{% endblock %}
+</html>	
