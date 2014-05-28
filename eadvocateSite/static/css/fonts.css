@@ -1,0 +1,243 @@
+
+body {
+	margin: 50px 300px;
+	font-weight: normal;
+}
+
+.intro {
+	margin-bottom: 60px;
+}
+
+/* Base Font Styles
+================================================== */	
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 5px 0;
+}
+
+h1 {
+	font-family: 'Source Sans Pro ExtraLight', sans-serif;
+	font-style: normal;
+  	font-weight: 200;
+  	color: #141414;
+  	font-size: 6em;
+  	font-size: 5em;
+  	font-size: 4em;	
+   	font-size: 4.5em;	
+}
+
+h2 {
+	font-family: 'Source Sans Pro Light', sans-serif;
+	font-style: normal;
+  	font-weight: 300;
+  	color: #141414;
+  	font-size: 6em;
+  	font-size: 5em;
+  	font-size: 3em;	
+}
+
+h3 {
+	font-family: 'Source Sans Pro Light', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	color: #141414;
+	font-size: 1.5em;
+	font-size: 2.2em;
+}
+
+h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	color: #141414;
+	font-size: 1.6em;
+}
+
+h5 {
+	font-family: 'Source Sans Pro Light', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	color: #141414;
+	font-size: 1.4em;
+}
+
+h6 {
+	font-family: 'Source Sans Pro Light', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	color: #404040;
+	font-size: 1.2em;
+}
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	color: #141414;
+	font-size: 2em;
+}
+
+a.infoLink {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #0A9EAC;
+	font-size: 1.4em;
+	text-decoration: none;
+	line-height: 0px;
+	margin: 20px 0;
+	display: inline-block;
+	cursor: pointer;
+	
+	-webkit-transition: 0.3s ease-in;
+	-moz-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
+}
+
+a.infoLink:hover {
+	color: #404040;
+	text-decoration: underline;
+}
+
+a.infoLink:visited {
+	color: #404040;
+	text-decoration: underline;
+}
+
+a.infoLink:visited {
+	color: #404040;
+	text-decoration: underline;
+}
+
+/* Font - Bold Class: All Font Styles
+================================================== */	
+.bold {
+	font-family: 'Source Sans Pro Semibold', sans-serif;
+}
+
+.border {
+	border-bottom: 1px solid #141414;
+	margin-bottom: 30px;
+}
+
+.banner {
+	background: #141414;
+	color: #fff;
+	padding: 10px;
+}
+
+strong, b {
+ font-weight: bold;
+}
+
+strong {
+	font-weight: bold;
+	font: inherit;
+}
+
+.whiteText {
+	color: white;
+}
+
+.lightGreyText {
+	color: #404040;
+}
+
+p {
+	font-family: 'Source Sans Pro Light', sans-serif;	
+	font-style: normal;
+  	font-weight: 300;
+  	font-size: 1em;
+  	xfont-size: 12pt;  	
+}
+
+button {
+	background: #D02E54;
+	width: 220px;
+	height: 60px;
+	border: none;
+	font-family: 'Source Sans Pro', sans-serif;	
+	font-style: normal;
+  	font-weight: 400;
+	text-align: center;
+	font-size: 1em;
+	text-transform: uppercase;
+	color: white;
+	margin: 10px 0;
+	cursor: pointer;
+	
+	-webkit-transition: 0.3s ease-in;
+	-moz-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
+	
+	display: block;
+}
+
+button:hover {
+	background: #404040;
+}
+
+button.blue {
+	background: #0A9EAC;
+}
+
+button.blue:hover {
+	background: #404040;
+}
+
+button.login {
+	background: #0A9EAC;
+	width: 120px;
+	height: 40px;
+	font-family: 'Source Sans Pro Light', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: none;
+	xfloat: right;
+}
+
+button.login:hover {
+	background: #404040;
+}
+
+button.join {
+	background: #C5C5C5;
+	width: 120px;
+	height: 40px;
+	font-family: 'Source Sans Pro Light', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: none;
+	color: #404040;
+	xfloat: right;
+}
+
+button.join:hover {
+	background: #404040;
+	color: white;
+}
+
+.buttonPadding {
+	margin-right: 30px;
+}
+
+
+
+
+
+ul {
+	font-family: 'Source Sans Pro Light', sans-serif;	
+	font-style: normal;
+  	font-weight: 300;
+  	font-size: 1em;	
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

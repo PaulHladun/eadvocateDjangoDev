@@ -1,0 +1,521 @@
+
+
+/* Tablet CSS
+   ================================================
+   eAdvocate Ltd.
+   Copyright 2013
+
+   http://www.eadvocate.com/
+
+   Design and code by Paul Hladun
+   
+   ================================================*/
+
+/* Desktop and Tablet - Landscape to Portrait
+================================================== */	  
+@media (min-width: 800px) and (max-width: 1100px)
+
+{
+	
+/* Banners, Backgrounds and Overlays
+================================================== 
+==================================================*/	
+
+	.bannerHome, .bannerHowWeHelp, .bannerFindCare, .bannerFindWork {
+	  	max-width: 100%;
+	   	height: 500px;
+	}
+	
+	.bannerIndex h1 {
+		margin-top: 70px;
+	}
+	
+	.banner h1 {
+		margin-top: 140px;
+	}
+	
+	.banner h2 {
+		font-size: 2.4em;
+		margin-top: 10px;
+	}
+	
+/* How We Help Backgrounds
+=================================== */	
+	
+	.howWeHelpLG1 {
+	   	height: 500px;
+	}
+
+
+/* Find Work Backgrounds
+=================================== */	
+	
+	.findWorkLG1, .findWorkLG2, .findWorkLG3 {
+	   	height: 500px;
+	}
+	
+	.findWorkLG2 {
+	   	height: 600px;
+	}
+	
+/* Find Care Backgrounds
+=================================== */
+	
+	.findCareLG1, .findCareLG2 {
+	   	height: 500px;
+	}
+	
+	.findCareLG1 {
+		padding-top: 260px;
+	}
+	
+	.findCareLG3 {
+	  	height: 500px;
+	}
+	
+/* Overlays
+=================================== */	
+	
+	.overlayBanners, .overlayLG, .overlayGreyBlue, .overlayGreyPink, .overlayWhite  {
+	  	min-height: 500px;
+	}
+	
+	.overlayLG, .overlayGreyBlue, .overlayGreyPink, .overlayWhite {
+	  	padding-top: 20px;
+	}
+	
+	.overlayLG2 {
+	  	min-height: 600px;
+	  	padding-top: 40px;
+	}
+
+	.overlay520 {
+		padding-top: 130px;
+	}
+
+	
+	/* Font Styles
+================================================== */	
+	
+	h1 {
+	  	font-size: 4.2em;
+	   	line-height: 66px;
+	}
+	
+	h2 {
+	  	font-size: 3em;	
+	}
+	
+	h3 {
+		font-size: 1.9em;
+	}
+	
+	h4 {
+		font-size: 1.4em;
+		margin: 10px auto;
+	}
+	
+	h5 {
+		font-size: 1.2em;
+	}
+	
+	h6 {
+		font-size: 1.1em;
+	}
+	
+	p {	
+		font-size: 1.2em;
+		xline-height: 24px;
+	}
+	
+	q, blockquote {
+		font-size: 1.1em;
+		line-height: 24px;	
+	}
+
+/* Button and Link Styles
+=============================== */	
+
+	
+/*  Bursary, Contact, and Community
+================================================== */	
+	
+	.contact h1 {
+		font-size: 3.3em;
+		line-height: 83px;
+	}
+	
+	.contact h4 {
+		color: white;
+		line-height:
+	}
+	
+	.community h1 {
+	  	line-height: 16px;
+	  	margin: 50px auto;
+	}
+	
+	.community h2 {
+	  	font-size: 2.2em;	
+	  	line-height: 32px;
+	}
+	
+	.community h3 {	
+  		font-size: 1.8em;	
+	  	line-height: 32px;
+ 		margin: 70px 0 0 0;
+	}
+	
+/* Find Work Page
+================================================== */	
+
+	.findWorkNegotiateBG {
+		background: rgba(255,255,255,0.7);
+		height: 320px;
+		padding: 20px 10px 10px 10px;
+	}
+	
+/* Hide Content
+================================================== */	
+
+	.hideTablet {
+		display: none;
+		padding: 0;
+	}
+
+}
+
+/* Phone Landscape and Tablet Portrait
+================================================== */	  
+@media (min-width: 480px) and (max-width: 800px)
+
+{
+	
+/* Banners, Backgrounds and Overlays
+================================================== 
+==================================================*/	
+	
+	.howWeHelpIndexBG, .howWeHelpIndexBG2, .howWeHelpIndexBG3, .howWeHelpBG1, .howWeHelpBG2, .howWeHelpBG3, .howWeHelpBG4, .howWeHelpLG1, .findWorkBG1, .findWorkBG2, .findWorkBG3, .findWorkLG1, .findWorkLG2, .findWorkLG3, .findCareBG1, .findCareLG1, .findCareLG2, .findCareLG3 {
+		margin: 0 auto;
+	  	height: auto;
+	}	
+
+	.bannerHome, .bannerHowWeHelp, .bannerFindCare, .bannerFindWork {
+	  	max-width: 100%;
+	   	height: 400px;
+	}
+	
+	.bannerIndex h1 {
+		margin: 40px 0 10px 0;
+	}
+	
+	.banner h1 {
+		font-size: 2.8em;
+		margin-top: 120px;
+	}
+	
+	.banner h2 {
+		font-size: 1.8em;
+		margin-top: 10px;
+	}
+
+/* Index/Home Page Banners
+=================================== */		
+	
+	.findCareIndex, .findWorkIndex {
+		padding-top: 57%;
+		margin-bottom: 20px;	
+	}	
+	
+	.findCareIndex {
+		background: url(../images/index/findCareIndex_Responsive.jpg) center center no-repeat;
+	}
+	
+	.findWorkIndex {
+		background: url(../images/index/findWorkIndex_Responsive.jpg) center center no-repeat;
+	}
+	
+/* How We Help Banners
+=================================== */	
+
+	.howWeHelpBG1, .howWeHelpBG2, .howWeHelpBG3,.howWeHelpBG4 {
+		padding-top: 60%;
+	}
+
+	.howWeHelpBG1 {
+		background: url(../images/howWeHelp/howWeHelp1_Reponsive.jpg) center center no-repeat;
+	}
+	
+	.howWeHelpBG2 {
+		background: url(../images/howWeHelp/howWeHelp2_Reponsive.jpg) center center no-repeat;
+	}
+	
+	.howWeHelpBG3 {
+		background: url(../images/howWeHelp/howWeHelp3_Reponsive.jpg) center center no-repeat;
+	}
+	
+	.howWeHelpBG4 {
+		background: url(../images/howWeHelp/howWeHelp4_Reponsive.jpg) center center no-repeat;
+	}
+	
+/* Find Work Banners
+=================================== */	
+
+	.findWorkBG1, .findWorkBG2, .findWorkBG3 {
+		padding-top: 60%;
+		margin-bottom: 20px;
+	}
+	
+	.findWorkBG1 {
+		background: url(../images/findWork/findWork1_Responsive.jpg) center center no-repeat;
+	}
+	
+	.findWorkBG2 {
+		background: url(../images/findWork/findWork2_Responsive.jpg) center center no-repeat;
+	}
+	
+	.findWorkBG3 {
+		background: url(../images/findWork/findWork3_Responsive.jpg) center center no-repeat;
+	}
+	
+	.findWorkLG1, .findWorkLG3 {
+	   	height: 400px;
+	}
+	
+	.findWorkLG2 {
+		background: url(../images/findWork/findWorkLG2_Tablet.jpg) center center no-repeat;
+  		max-height: 1000px;
+		margin-bottom: 30px;
+	}
+
+/* Find Care Banners
+=================================== */	
+
+	.findCareBG1 {
+		background: url(../images/findCare/findCare1_Responsive.jpg) center center no-repeat;
+		padding-top: 60%;
+		margin-bottom: 20px;
+	}
+	
+/* Find Care Backgrounds
+=================================== */
+	
+	.findCareLG1, .findCareLG2 {
+	   	height: 400px;
+	}
+	
+	.findCareLG1 {
+		padding-top: 160px;
+	}
+	
+	.findCareLG3 {
+	  	height: 400px;
+	}
+	
+/* Overlays
+=================================== */	
+
+	.overlayBanners {
+		background: rgba(20,20,20,0.1) center center no-repeat;
+	 	min-height: 400px;
+	}
+	
+	.overlayLG, .overlayGreyBlue, .overlayGreyPink {
+	  	min-height: 400px;
+  		padding-top: 10px;
+	}
+
+	.overlay520 {
+		padding-top: 50px;
+	}
+		
+/* Header and Navigation
+================================================== */	
+
+/* Font Styles
+================================================== */	
+	
+	h1 {
+	  	font-size: 3.8em;
+	   	line-height: 60px;
+	  	margin: 0 0 30px 0;	
+	}
+	
+	h2 {
+	  	font-size: 3em;	
+	}
+	
+	h3 {
+		font-size: 2em;
+	}
+	
+	h4 {
+		font-size: 1.3em;
+		margin: 5px auto;
+	}
+	
+	h5 {
+		font-size: 1.4em;
+	}
+	
+	h6 {
+		font-size: 1.1em;
+	}
+	
+	p {	
+		font-size: 1.1em;
+	  	line-height: 24px;
+		margin: 0 0 15px 0;
+	}
+	
+	q, blockquote {
+		font-size: 1.1em;	
+		margin-bottom: 15px;
+	}	
+	
+/* Button and Link Styles
+=============================== */	
+
+	a.infoLink, a.infoLinkAlt, a.edit, a.discuss {
+		font-size: 1.4em;
+		margin: 10px auto;
+	}
+	
+	a.infoLinkInline {
+		font-size: inherit;
+	}
+	
+	button {
+		width: 170px;
+		height: 50px;
+		margin: 20px 0;
+	}
+	
+/*  Bursary, Contact, and Community
+================================================== */	
+
+	.titleFind {
+		margin-bottom: 10px;
+		padding-bottom: 5px;
+		border-bottom: 4px solid #0A93A1;
+	}
+	
+	.findParagraphDiv {
+		min-height: 150px;
+	}
+	
+	.findButton {
+		min-height: 75px;
+		overflow: hidden;
+	}
+	
+	.findCare button, .findWork button {
+		margin: auto;
+	}
+	
+	.shareTheCare {
+		min-height: 300px;
+		margin-bottom: 10px;
+		padding-top: 10px;
+	}
+	
+	.contact {
+		background: #0A93A1;
+		min-height: 400px;
+		margin-bottom: 10px;
+		padding-top: 60px;
+	}
+
+	.contact h1 {
+		font-size: 3.3em;
+	}
+	
+	.communityBG {
+		background: url(../images/communityBG_Tablet.jpg) #fff center  center no-repeat;	
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	}
+	
+	.communityTextBG {
+		background: rgba(20,20,20,0.3) center center no-repeat;	
+	  	height: 100px;
+	  	position: absolute;
+	  	top: 0;
+	}
+	
+	.community h1 {
+	  	font-size: 3.4em;	
+	  	line-height: 48px;
+	  	margin: 60px 0 0 0;
+	}
+	
+	.community h2 {
+	  	font-size: 2.2em;	
+	  	line-height: 32px;
+	  	margin: 0;
+	}
+	
+	.community h3 {	
+  		font-size: 1.6em;	
+ 		margin-top: 40px;
+	}
+	
+	.blueBorderDiv {
+		min-height: 60px;
+	}
+	
+	.blueBorder {
+		border-bottom: 3px solid #0A93A1;
+	}
+	
+/* Find Work Page
+================================================== */	
+
+	.findWorkNegotiateBG {
+		height: 170px;
+		padding: 10px 10px 70px 10px;
+		margin-bottom: 30px;
+	}
+
+/* Find Care Page
+================================================== */	
+
+	.findCareSubHeadingDiv {
+		min-height: 40px;
+	}
+
+/* Footer
+================================================== */	
+
+	footer {
+		font-size: 0.92em;
+	}
+	
+	footer li a {
+		padding: 0 0 5px 0;
+	}
+	
+	footer h5, footer h5 a {
+		font-size: 1em;
+		padding-bottom: 0;
+	}
+	
+	footer h6 {
+		font-size: 0.8em;
+	}
+	
+/* Hide Content
+================================================== */		
+
+	.hideContent {
+		display: none;
+	}
+	
+	.hideTablet {
+		display: none;
+		padding: 0;
+	}
+	
+}

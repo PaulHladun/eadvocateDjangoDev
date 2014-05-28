@@ -1,0 +1,340 @@
+
+/* CSS - eAdvocate - The Caring Marketplace
+==================================================
+	
+	eAdvocate Inc.
+	
+	By: Paul Hladun
+	2013 
+	
+*/
+
+
+/* Misc Styles
+================================================== */	
+
+body {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+body background {
+	display: none;
+	background: #fff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none !Important;
+}
+
+a, button {
+	transition: 0.5s ease-in-out;
+   	-moz-transition: 0.5s ease-in-out;
+  	-webkit-transition: 0.5s ease-in-out;
+  	-o-transition: 0.5s ease-in-out;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;	
+	list-style: none;
+}
+
+img {
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+img.logo {
+	margin: 0;
+}
+
+.centerContent {
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+hr { 
+	width: 50%;
+	border: solid #999; 
+	border-width: 1px 0 0; 
+	margin: 20px auto 10px;   
+	height: 0; 
+	clear: both; 
+}
+
+hr { 
+	width: 79.78%;
+	border: solid rgba(40,40,40,0.4);
+	border-width: 1px 0 0; 
+	margin: 0 auto;   
+	height: 0; 
+	clear: both; 
+}
+
+.hideContent {
+	display: none;
+}
+
+/* Banners, Backgrounds and Overlays
+================================================== 
+==================================================*/	
+
+.bannerBG, .howWeHelpIndexBG, .howWeHelpIndexBG2, .howWeHelpIndexBG3, .findCareIndex, .findWorkIndex, .bannerHowWeHelp, .howWeHelpBG1, .howWeHelpBG2, .howWeHelpBG3, .howWeHelpBG4, .howWeHelpLG1, .howWeHelpGreyBG, .bannerFindWork, .findWorkBG1, .findWorkBG2, .findWorkBG3, .findWorkLG1, .findWorkLG2, .findWorkLG3, .bannerFindCare, .findCareBG1, .findCareLG1, .findCareLG2, .findCareLG3 {
+	margin: 0 auto;
+}
+
+/* Index/Home Page Banners
+=================================== */	
+
+.bannerBG {
+	background: url(../images/index/indexBanner1.jpg) center center no-repeat;
+}
+
+.banner {
+	color: #fff;
+	margin-top: 90px;
+}
+
+.howWeHelpIndexBG, .howWeHelpIndexBG2, .howWeHelpIndexBG3, .findCareIndex, .findWorkIndex {
+	padding-top: 100%;
+	margin-bottom: 20px;	
+}
+
+.findCareIndex, .findWorkIndex {
+	padding-top: 68%;
+	margin-bottom: 20px;	
+}
+
+.howWeHelpIndexBG {
+	background: url(../images/index/howWeHelpIndex1.jpg) center center no-repeat;
+}
+
+.howWeHelpIndexBG2 {
+	background: url(../images/index/howWeHelpIndex2.jpg) center center no-repeat;
+}
+
+.howWeHelpIndexBG3 {
+	background: url(../images/index/howWeHelpIndex3.jpg) center center no-repeat;
+}
+
+.findCareIndex {
+	background: url(../images/index/findCareIndex.jpg) center center no-repeat;
+}
+	
+.findWorkIndex {
+	background: url(../images/index/findWorkIndex.jpg) center center no-repeat;
+}
+
+/* How We Help Banners
+=================================== */	
+
+.bannerHowWeHelp {
+	background: url(../images/howWeHelp/bannerHowWeHelp.jpg) center center no-repeat;
+  	max-width: 1170px;
+}
+
+.howWeHelpBG1, .howWeHelpBG2, .howWeHelpBG3, .howWeHelpBG4 {
+	padding-top: 70%;
+	margin-bottom: 20px;
+}
+
+.howWeHelpBG1 {
+	background: url(../images/howWeHelp/howWeHelp1.jpg) center center no-repeat;
+}
+
+.howWeHelpBG2 {
+	background: url(../images/howWeHelp/howWeHelp2.jpg) center center no-repeat;
+}
+
+.howWeHelpBG3 {
+	background: url(../images/howWeHelp/howWeHelp3.jpg) center center no-repeat;
+}
+
+.howWeHelpBG4 {
+	background: url(../images/howWeHelp/howWeHelp4.jpg) center center no-repeat;
+}
+
+.howWeHelpLG1 {
+	background: url(../images/howWeHelp/howWeHelpLG1.jpg) center center no-repeat;
+  	max-width: 1170px;
+  	height: 700px;
+  	margin-bottom: 30px;
+}
+
+.howWeHelpGreyBG {
+	background: #E6E6E6;
+  	max-width: 1170px;
+  	margin-bottom: 20px;
+  	padding-top: 20px;
+}
+
+/* Find Work Banners
+=================================== */	
+
+.bannerFindWork {
+	background: url(../images/findWork/bannerFindWork.jpg) center center no-repeat;
+  	max-width: 1170px;
+}
+
+.findWorkBG1, .findWorkBG2, .findWorkBG3 {
+	padding-top: 70%;
+	margin-bottom: 20px;
+}
+
+.findWorkBG1 {
+	background: url(../images/findWork/findWork1.jpg) center center no-repeat;
+}
+
+.findWorkBG2 {
+	background: url(../images/findWork/findWork2.jpg) center center no-repeat;
+}
+
+.findWorkBG3 {
+	background: url(../images/findWork/findWork3.jpg) center center no-repeat;
+}
+
+.findWorkLG1, .findWorkLG2, .findWorkLG3 {
+  	max-width: 1170px;
+  	height: 700px;
+}
+
+.findWorkLG1 {
+	background: url(../images/findWork/findWorkLG1.jpg) center center no-repeat;
+}
+
+.findWorkLG2 {
+	background: url(../images/findWork/findWorkLG2_Test.jpg) center center no-repeat;
+	margin-bottom: 30px;
+}
+
+.findWorkLG3 {
+	background: url(../images/findWork/findWorkLG3.jpg) center center no-repeat;
+}
+
+/* Find Care Banners
+=================================== */	
+
+.bannerFindCare {
+	background: url(../images/findCare/bannerFindCare.jpg) center center no-repeat;
+  	max-width: 1170px;
+}
+
+.findCareBG1 {
+	background: url(../images/findCare/findCare1.jpg) center center no-repeat;
+	padding-top: 70%;
+	margin-bottom: 20px;
+}
+
+.findCareLG1, .findCareLG2, .findCareLG3 {
+  	max-width: 1170px;
+  	height: 700px;	
+}
+
+.findCareLG1 {
+	background: url(../images/findCare/findCareLG1.jpg) center center no-repeat;
+}
+
+.findCareLG2 {
+	background: url(../images/findCare/findCareLG2.jpg) center center no-repeat;
+}
+
+.findCareLG3 {
+	background: url(../images/findCare/findCareLG3.jpg) center center no-repeat;
+  	height: 520px;
+}
+
+/* All Banners
+=================================== */	
+
+.bannerBG, .howWeHelpIndexBG, .howWeHelpIndexBG2, .howWeHelpIndexBG3, .findCareIndex, .findWorkIndex, .bannerHowWeHelp, .howWeHelpBG1, .howWeHelpBG2, .howWeHelpBG3, .howWeHelpBG4, .howWeHelpLG1, .bannerFindWork, .findWorkBG1, .findWorkBG2, .findWorkBG3, .findWorkLG1, .findWorkLG2, .findWorkLG3, .bannerFindCare, .findCareBG1, .findCareLG1, .findCareLG2, .findCareLG3 {
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+/* Overlays
+=================================== */	
+
+.overlay {
+	background: rgba(20,20,20,0.4) center center no-repeat;
+ 	min-height: 700px;
+}
+
+.overlay700 {
+	background: rgba(20,20,20,0.3) center center no-repeat;
+ 	min-height: 700px;
+}
+
+.overlay520 {
+	background: rgba(20,20,20,0.3) center center no-repeat;
+ 	min-height: 520px;
+	padding-top: 150px;
+}
+
+.overlayTwo {
+	background: rgba(20,20,20,0.3) center center no-repeat;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+ 	min-height: 400px;	
+}
+
+.overlay, .overlay700, .overlay520 {
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+}
+
+
+
+/* Media Queries
+================================================== 
+================================================== */
+
+
+/* Large Desktop
+================================================== */	
+@media (min-width: 1200px) 
+    
+{ ... }
+
+/* Desktop and Tablet - Landscape to Portrait
+================================================== */	  
+@media (min-width: 800px) and (max-width: 1100px)
+
+{ ... }
+
+/* Phone Landscape and Tablet Portrait
+================================================== */	  
+@media (min-width: 480px) and (max-width: 800px)
+
+{
+	
+	
+	
+}
+ 
+/* Phone - Landscapte and Portrait
+================================================== */	    
+@media (max-width: 480px) 
+
+
+
+{
+	
+}
+

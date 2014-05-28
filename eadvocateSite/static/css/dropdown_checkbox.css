@@ -1,0 +1,123 @@
+
+
+label {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 0.9em;	
+	color: #404040;
+	position: relative;
+	padding: 0 0 1px 30px;
+	xmargin: 5px 15px 5px 150px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+label:before {
+	content: "";
+	background: none;
+	width: 18px;
+	height: 18px;
+	display: inline-block
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	border: 1px solid rgba(10,158,172,0.9);
+}
+
+.checkbox label {
+	margin-bottom: 10px;
+}
+
+input[type="checkbox"]:checked + label:before {
+	content: "\2713";
+	background: rgba(10,158,172,0.9);
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+    line-height: 15px;
+    border: none;
+}
+
+.checkboxes li {
+	display: block;
+	padding: 16px 0 0 230px;	
+}
+
+textarea {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 1em;	
+	color: #404040;
+	background: white;	
+	border: 1px solid rgba(10,158,172,0.9);
+	width: 100%;
+	xmax-width: 570px;
+	min-width: 50%;
+	min-height: 130px;
+	max-height: 300px;
+	xposition: relative;
+	padding: 10px;
+	margin: 15px 0;
+	display: inline-block;
+}
+
+.textareaExtra {
+	background: rgba(10,158,172,0.2);
+	border: 1px solid rgba(10,158,172,0.9);
+	max-width: 1168px;
+	min-height: 200px;
+}
+
+input[type="text"] {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 1em;	
+	color: #404040;
+	background: white;	
+	border: 1px solid rgba(10,158,172,0.9);
+	width: 300px;
+	height: 40px;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: inline-block;	
+}
+
+input[type="text"].calendar {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 1em;	
+	color: #404040;
+	background: url(../images/calendar_Icon.png) right center no-repeat;
+	border: 1px solid rgba(10,158,172,0.9);
+	width: 300px;
+	height: 40px;
+	padding: 10px;
+	xmargin: 15px 0;
+	display: inline-block;
+	cursor: pointer	
+}
+
+select {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 1em;	
+	color: #404040;
+	background: url(../images/dropdown_Icon.png) right center no-repeat;	
+	left: 60px;
+	border: 1px solid rgba(10,158,172,0.9);
+	width: 300px;
+	height: 40px;
+	padding: 5px;
+	margin-bottom: 10px;
+	display: inline-block;	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+
+

@@ -1,0 +1,181 @@
+
+
+/* RFC Forms CSS
+   ================================================
+   eAdvocate Ltd.
+   Copyright 2013
+
+   http://www.eadvocate.com/
+
+   Design and code by Paul Hladun
+   
+   ================================================*/
+
+.forms {
+	margin: 30px auto;
+}
+
+.formHeader {
+	background: #F4F2F2;
+	margin-bottom: 20px;
+	padding: 16px;
+}
+
+.requirementsHeading, .cpResponseHeading, .clientApprovalHeading, .cpApprovalHeading {
+	height: 70px;
+	padding: 8px 16px;
+}
+
+.requirementsHeading {
+	background: #0A9EAC;
+}
+
+.cpResponseHeading {
+	background: #404040;
+}
+
+.clientApprovalHeading, .cpApprovalHeading {
+	background: #D02E54;
+}
+
+.requirementsDiv, .cpResponseDiv, .clientApprovalDiv, .cpApprovalDiv {
+	position: relative;
+	min-height: 160px;
+	height: 100%;
+	padding: 16px;
+	overflow: hidden;
+}
+
+.requirementsDiv.description, .cpResponseDiv.description, .clientApprovalDiv.description, .cpApprovalDiv.description {
+	position: relative;
+	min-height: 220px;
+	height: 100%;
+}
+
+.requirementsDiv {
+	background: rgba(10,158,172,0.05);
+}
+
+.cpResponseDiv {
+	background: rgba(40,40,40,0.05);
+}
+
+.clientApprovalDiv, .cpApprovalDiv {
+	background: rgba(206,48,84,0.05);
+}
+
+/* Form Font Styles
+================================================== */	
+
+.forms h1 {
+}
+
+.forms h2 {
+}
+
+.forms h3 {
+}
+
+.forms h4 {
+}
+
+.forms h5 {
+	margin: 0 0 5px 0;
+}
+
+.forms h6 {
+	color: #141414;
+	font-size: 1.05em;
+	margin-bottom: 5px;
+}
+
+.forms p {
+	font-size: 1em;
+	line-height: 20px;
+	margin-bottom: 0;
+}
+
+
+/* RFC Form
+================================================== */
+
+.rfcForm {
+	margin-bottom: 30px;
+}
+
+.rfcHeadingDiv {
+	background: #0A9EAC;
+	width: 100%;
+	height: 60px;
+}
+
+.rfcForm h3 {
+	color: white;
+	text-align: right;
+	margin-right: 20px;
+	padding-top: 5px;
+}
+
+.rfcForm h4 {
+	color: #0A9EAC;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.rfcForm h5 {
+	font-size: 1.2em;
+	margin-top: 16px;
+}
+
+.rfcForm h6 {
+	font-size: 1em;
+	text-align: right;
+	margin-top: 14px;
+}
+
+input[type=submit], input[type=reset] {
+	background: rgba(208,46,84,0.9);
+	width: 170px;
+	height: 54px;
+	border: none;
+  	font-weight: 300;
+	text-align: center;
+	font-size: 1em;
+	text-transform: uppercase;
+	color: white;
+	margin: 30px 0;
+	cursor: pointer;	
+	display: block;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+input[type=submit]:hover {
+	background: rgba(20,20,20,0.6);
+}
+
+input[type=reset] {
+	background: #404040;
+	width: 120px;
+	height: 54px;
+}
+
+input[type=reset]:hover {
+	background: #202020;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    background: rgba(10,158,172,0.3);
+    color: #141414;
+    border: transparent;
+    outline: 0 none;
+    
+  	-webkit-border: none;
+  	-moz-border: none;
+  	-o-border: none;
+  	border: none;
+}
+
+
