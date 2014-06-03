@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'south',
     'baseApp',
+    'rfc_proposal',
 )
 
 MIDDLEWARE_CLASSES = (
