@@ -125,7 +125,6 @@
 	
 	p {	
 		font-size: 1.2em;
-		xline-height: 24px;
 	}
 	
 	q, blockquote {
@@ -147,7 +146,6 @@
 	
 	.contact h4 {
 		color: white;
-		line-height:
 	}
 	
 	.community h1 {
@@ -171,8 +169,12 @@
 
 	.findWorkNegotiateBG {
 		background: rgba(255,255,255,0.7);
-		height: 320px;
+		height: 330px;
 		padding: 20px 10px 10px 10px;
+	}
+	
+	.findWorkNegotiateBG p {
+		line-height: 26px;	
 	}
 	
 /* Hide Content
@@ -477,6 +479,11 @@
 		height: 170px;
 		padding: 10px 10px 70px 10px;
 		margin-bottom: 30px;
+	}
+	
+	.findWorkNegotiateBG h3 {
+		font-size: 1.6em;
+		margin-bottom: 5px;	
 	}
 
 /* Find Care Page

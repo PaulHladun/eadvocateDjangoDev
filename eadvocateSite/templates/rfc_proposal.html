@@ -1,0 +1,587 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+{% block content %}
+<!-- RFC Form Header
+================================================== -->		
+<div class="forms">
+	<div class="gridWrap1200">
+		<div class="grid-100">
+			<h3 class="justifyLeft blueBorder"><strong>Request for Care (RFC</strong> Form)</h3>
+		</div>
+	</div>
+</div>
+
+<!-- Step One - Patient Name
+================================================== -->	
+<form name="rfcForm" action="" method="post">
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step One</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Patient Name</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Select the name of the person requiring care.</h5>
+				<select name="patient-name" id="patient-name" required>
+				  <option value="#">Select Patient</option>
+				  <option value="#">Name Here</option>
+				  <option value="#">Name Here</option>
+				  <option value="#">Name Here</option>
+				</select>					
+		</div>
+	</div>
+</div>
+
+<!-- Step Two - Care Request Name
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Two (Optional)</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Care Request Name</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Input the name of this RFC (Optional).</h5>
+				<input type="text" name="name-file" placeholder="Request Care Name (Optional)">					
+		</div>
+	</div>
+</div>
+
+<!-- Step Three - Need Area
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Three</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Need Area</h3>
+			</div>	
+		</div>	
+		<div class="grid-50">	
+			<h5>Select need areas required for care.</h5>
+			<div class="gridFormRFC-100">
+				<div class="gridFormRFC-50 checkbox">
+					<ul>
+						<li>
+							<input id="needArea-1" type="checkbox" name="needArea-name" value="needArea-1">
+							<label for="needArea-1">Need Area</label>
+						</li>
+						<li>
+							<input id="needArea-2" type="checkbox" name="needArea-name" value="needArea-2">
+							<label for="needArea-2">Need Area</label>
+						</li>
+						<li>
+							<input id="needArea-3" type="checkbox" name="needArea-name" value="needArea-3">
+							<label for="needArea-3">Need Area</label>
+						</li>
+						<li>
+							<input id="needArea-4" type="checkbox" name="needArea-name" value="needArea-4">
+							<label for="needArea-4">Need Area</label>
+						</li>
+					</ul>
+				</div>	
+				<div class="gridFormRFC-50 checkbox">
+					<ul>
+						<li>
+							<input id="needArea-5" type="checkbox" name="needArea-name" value="needArea-5">
+							<label for="needArea-5">Need Area</label>
+						</li>
+						<li>
+							<input id="needArea-6" type="checkbox" name="needArea-name" value="needArea-6">
+							<label for="needArea-6">Need Area</label>
+						</li>
+						<li>
+							<input id="needArea-7" type="checkbox" name="needArea-name" value="needArea-7">
+							<label for="needArea-7">Need Area</label>
+						</li>
+						<li>
+							<input id="needArea-8" type="checkbox" name="needArea-name" value="needArea-8">
+							<label for="needArea-8">Need Area</label>
+						</li>
+					</ul>
+				</div>	
+			</div>					
+		</div>
+	</div>
+</div>
+
+<!-- Step Four - Services
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Four</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Services Needed</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Identify the services needed to support the care.</h5>
+			<div class="gridFormRFC-100">
+				<div class="gridFormRFC-50 checkbox">
+					<ul>
+						<li>
+							<input id="service-1" type="checkbox" name="service-name" value="service-1">
+							<label for="service-1">Service</label>
+						</li>
+						<li>
+							<input id="service-2" type="checkbox" name="service-name" value="service-2">
+							<label for="service-2">Service</label>
+						</li>
+						<li>
+							<input id="service-3" type="checkbox" name="service-name" value="service-3">
+							<label for="service-3">Service</label>
+						</li>
+						<li>
+							<input id="service-4" type="checkbox" name="service-name" value="service-4">
+							<label for="service-4">Service</label>
+						</li>
+					</ul>
+				</div>	
+				<div class="gridFormRFC-50 checkbox">
+					<ul>
+						<li>
+							<input id="service-5" type="checkbox" name="service-name" value="service-5">
+							<label for="service-5">Service</label>
+						</li>
+						<li>
+							<input id="service-6" type="checkbox" name="service-name" value="service-6">
+							<label for="service-6">Service</label>
+						</li>
+						<li>
+							<input id="service-7" type="checkbox" name="service-name" value="service-7">
+							<label for="service-7">Service</label>
+						</li>
+						<li>
+							<input id="service-8" type="checkbox" name="service-name" value="service-8">
+							<label for="service-8">Need Area</label>
+						</li>
+					</ul>
+				</div>	
+			</div>							
+		</div>
+	</div>
+</div>
+
+<!-- Step Five - Skills Required
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Five</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Skills Required</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Identify the credentials and skills required.</h5>
+			<div class="gridFormRFC-100">
+				<div class="gridFormRFC-50 checkbox">
+					<ul>
+						<li>
+							<input id="skill-1" type="checkbox" name="skill-name" value="skill-1">
+							<label for="skill-1">Skill</label>
+						</li>
+						<li>
+							<input id="skill-2" type="checkbox" name="skill-name" value="skill-2">
+							<label for="skill-2">Skill</label>
+						</li>
+						<li>
+							<input id="skill-3" type="checkbox" name="skill-name" value="skill-3">
+							<label for="skill-3">Skill</label>
+						</li>
+						<li>
+							<input id="skill-4" type="checkbox" name="skill-name" value="skill-4">
+							<label for="skill-4">Skill</label>
+						</li>
+					</ul>
+				</div>	
+				<div class="gridFormRFC-50 checkbox">
+					<ul>
+						<li>
+							<input id="skill-5" type="checkbox" name="skill-name" value="skill-5">
+							<label for="skill-5">Skill</label>
+						</li>
+						<li>
+							<input id="skill-6" type="checkbox" name="skill-name" value="skill-6">
+							<label for="skill-6">Skill</label>
+						</li>
+						<li>
+							<input id="skill-7" type="checkbox" name="skill-name" value="skill-7">
+							<label for="skill-7">Skill</label>
+						</li>
+						<li>
+							<input id="skill-8" type="checkbox" name="skill-name" value="skill-8">
+							<label for="skill-8">Skill</label>
+						</li>
+					</ul>
+				</div>	
+			</div>							
+		</div>
+	</div>
+</div>
+
+<!-- Step Six - Location
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Six</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Location</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Indicate location of care.</h5>
+			<div class="gridFormRFC-100">
+				<div class="gridFormRFC-50 checkbox">
+					<ul>
+						<li>
+							<input id="residence" type="checkbox" name="residence" value="value">
+							<label for="residence">Residence</label>
+						</li>
+						<li>
+							<input id="hospital" type="checkbox" name="hospital" value="value">
+							<label for="hospital">Hospital</label>
+						</li>
+						<li>
+							<input id="medical-facility" type="checkbox" name="medical-facility" value="medical-facility">
+							<label for="medical-facility">Medical Facility</label>
+						</li>
+					</ul>
+				</div>	
+				<div class="gridFormRFC-50 checkbox">
+					<ul>
+						<li>
+							<input id="school" type="checkbox" name="school" value="school">
+							<label for="school">School</label>
+						</li>
+						<li>
+							<input id="other" type="checkbox" name="other" value="other">
+							<label for="other">Other</label>
+						</li>	
+					</ul>
+				</div>	
+			</div>
+			<div class="gridFormRFC-100">
+				<input type="text" name="location-city" placeholder="City">
+				<select name="province_state" id="province_state">
+				  <option value="#">Select Province/ State</option>
+					<option value="AB">Alberta</option>
+					<option value="BC">British Columbia</option>
+					<option value="MB">Manitoba</option>
+					<option value="NB">New Brunswick</option>
+					<option value="NL">Newfoundland and Labrador</option>
+					<option value="NS">Nova Scotia</option>
+					<option value="NT">Northwest Territories</option>
+					<option value="NU">Nunavut</option>
+					<option value="ON">Ontario</option>
+					<option value="PE">Prince Edward Island</option>
+					<option value="QC">Quebec</option>
+					<option value="SK">Saskatchewan</option>
+					<option value="YT">Yukon</option>
+					<option> ==================== </option>
+					<option value="AL">Alabama</option> 
+					<option value="AK">Alaska</option> 
+					<option value="AZ">Arizona</option> 
+					<option value="AR">Arkansas</option> 
+					<option value="CA">California</option> 
+					<option value="CO">Colorado</option> 
+					<option value="CT">Connecticut</option> 
+					<option value="DE">Delaware</option> 
+					<option value="DC">District Of Columbia</option> 
+					<option value="FL">Florida</option> 
+					<option value="GA">Georgia</option> 
+					<option value="HI">Hawaii</option> 
+					<option value="ID">Idaho</option> 
+					<option value="IL">Illinois</option> 
+					<option value="IN">Indiana</option> 
+					<option value="IA">Iowa</option> 
+					<option value="KS">Kansas</option> 
+					<option value="KY">Kentucky</option> 
+					<option value="LA">Louisiana</option> 
+					<option value="ME">Maine</option> 
+					<option value="MD">Maryland</option> 
+					<option value="MA">Massachusetts</option> 
+					<option value="MI">Michigan</option> 
+					<option value="MN">Minnesota</option> 
+					<option value="MS">Mississippi</option> 
+					<option value="MO">Missouri</option> 
+					<option value="MT">Montana</option> 
+					<option value="NE">Nebraska</option> 
+					<option value="NV">Nevada</option> 
+					<option value="NH">New Hampshire</option> 
+					<option value="NJ">New Jersey</option> 
+					<option value="NM">New Mexico</option> 
+					<option value="NY">New York</option> 
+					<option value="NC">North Carolina</option> 
+					<option value="ND">North Dakota</option> 
+					<option value="OH">Ohio</option> 
+					<option value="OK">Oklahoma</option> 
+					<option value="OR">Oregon</option> 
+					<option value="PA">Pennsylvania</option> 
+					<option value="RI">Rhode Island</option> 
+					<option value="SC">South Carolina</option> 
+					<option value="SD">South Dakota</option> 
+					<option value="TN">Tennessee</option> 
+					<option value="TX">Texas</option> 
+					<option value="UT">Utah</option> 
+					<option value="VT">Vermont</option> 
+					<option value="VA">Virginia</option> 
+					<option value="WA">Washington</option> 
+					<option value="WV">West Virginia</option> 
+					<option value="WI">Wisconsin</option> 
+					<option value="WY">Wyoming</option>
+				</select>
+			</div>								
+		</div>
+	</div>
+</div>
+
+<!-- Step Seven - Frequency
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Seven</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Frequency</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Frequency of care and time of day.</h5>
+				<select name="time-days" id="time-days">
+				  <option value="#">Select Days</option>
+				  <option value="#">1 Day</option>
+				  <option value="#">2 Days</option>
+				  <option value="#">3 Days</option>
+				  <option value="#">4 Days</option>
+				  <option value="#">5 Days</option>
+				  <option value="#">6 Days</option>
+				  <option value="#">7 Days</option>
+				</select>
+				<select name="time-hours" id="time-hours">
+				  <option value="#">Select Hours</option>
+				  <option value="#">1 Hour</option>
+				  <option value="#">2 Hours</option>
+				  <option value="#">3 Hours</option>
+				  <option value="#">4 Hours</option>
+				  <option value="#">5 Hours</option>
+				  <option value="#">6 Hours</option>
+				  <option value="#">7 Hours</option>
+				  <option value="#">8 Hours</option>
+				  <option value="#">9 Hours</option>
+				  <option value="#">10 Hours</option>
+				  <option value="#">11 Hours</option>
+				  <option value="#">12 Hours</option>
+				  <option value="#">All Day</option>
+				</select>						
+		</div>
+	</div>
+</div>
+
+<!-- Step Eight - Duration
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Eight</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Duration</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Start and duration of contract.</h5>
+			<input type="text" class="calendar" name="duration-start" value="Select Start Date">		
+			<input type="text" class="calendar" name="duration-finish" value="Select End Date">	
+			<div class="checkboxes">
+				<input id="open-duration" type="checkbox" name="open-duration" value="open-duration">
+				<label for="open-duration">Select to make open duration.</label>
+			</div>				
+		</div>
+	</div>
+</div>
+
+<!-- Step Nine - Pay Range
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Nine</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Pay Range</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Select pay range per hour. Recommended pay range displayed.</h5>
+			<h4><strong>Work</strong></h4>						
+		</div>
+	</div>
+</div>
+
+<!-- Step Ten - Language
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Ten</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Language</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Select language requirements or no preference.</h5>
+				<select name="language" id="id_language">
+				  <option value="#">Select Language</option>
+				  <option value="#">Afrikaans</option>
+				  <option value="#">العربيّة</option>
+				  <option value="#">azərbaycan dili</option>
+				</select>					
+		</div>
+	</div>
+</div>
+
+<!-- Step Eleven - Gender
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Eleven</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Gender</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Select gender requirements or no preference.</h5>
+			<div class="gridFormRFC-100">
+				<div class="gridFormRFC-50 checkbox">
+					<ul>
+						<li>
+							<input id="no-preference" type="checkbox" name="no-preference" value="no-preference">
+							<label for="no-preference">No-preference</label>
+						</li>
+						<li>
+							<input id="male" type="checkbox" name="male" value="male">
+							<label for="male">Male</label>
+						</li>
+						<li>
+							<input id="female" type="checkbox" name="female" value="female">
+							<label for="female">Female</label>
+						</li>
+					</ul>
+				</div>		
+			</div>						
+		</div>
+	</div>
+</div>
+
+<!-- Step Twelve - Background Check
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Twelve</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Background Check</h3>
+				<h6>*Please refer to <a href="#" class="infoLinkInline">Guidelines</a> for clarification.</h6>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>*Select if background check is required.</h5>
+			<div class="gridFormRFC-100">
+				<div class="gridFormRFC-50 checkbox">
+					<ul>
+						<li>
+							<input id="background-yes" type="checkbox" name="background-yes" value="background-yes">
+							<label for="background-yes">Yes</label>
+						</li>
+						<li>
+							<input id="background-no" type="checkbox" name="background-no" value="background-no">
+							<label for="background-no">No</label>
+						</li>
+						<br>
+						<li>
+						<input id="smoker" type="checkbox" name="smoker" value="smoker">
+						<label for="smoker">Non-smoker required</label>
+						</li>
+					</ul>
+				</div>		
+			</div>					
+		</div>
+	</div>
+</div>
+
+<!-- Step Thirteen - Other Requirements
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Thirteen</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Other Reqirements</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>Please input any further requirements needed below.</h5>
+				<textarea for="other-reqirements" input id="other-requirements" type="textarea" name="other-reqirements" value="other-requirements" placeholder="Please input details here..."></textarea>						
+		</div>
+	</div>
+</div>
+
+<!-- Step Fourteen - Further Details
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Fourteen</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Further Details</h3>
+			</div>	
+		</div>		
+		<div class="grid-50">
+		<h5>Please input any further details below.</h5>
+			<textarea for="further-details" input id="further-details" type="textarea" name="further-details" value="further-details" placeholder="Please input details here..." required></textarea>											
+		</div>
+	</div>
+</div>
+
+<!-- Step Fifteen - Response Date
+================================================== -->	
+<div class="rfcForm">
+	<div class="gridWrap960">
+		<div class="grid-50">
+			<h4>Step Fifteen</h4>
+			<div class="rfcHeadingDiv">
+				<h3>Response Date</h3>
+				<h6>*We recommend a 7 days and require 3 days for responses.</h6>
+			</div>	
+		</div>		
+		<div class="grid-50">
+			<h5>*Repsonse required by the following date.</h5>
+			<input type="text" class="calendar" name="response-date" value="Response Date">				
+		</div>
+	</div>
+</div>
+
+<div class="gridWrap960">
+	<div class="grid-25">
+		<input type="submit" name="submit" value="submit"/>
+	</div>
+	<div class="grid-25">
+		<button class="black">Save Draft</button>
+	</div>
+	<div class="grid-25">
+		<input type="reset" name="reset" value="reset" class="reset"/>
+	</div>
+	<div class="grid-25"><!--- filler -->
+	</div>
+</div>
+
+</form>
+{% endblock %}
+
+

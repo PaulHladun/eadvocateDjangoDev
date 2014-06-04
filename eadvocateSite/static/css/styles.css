@@ -507,12 +507,11 @@ a.moreInfoDashboard {
 
 a.infoLinkProfileAlt {
 	font-size: 1em;
-	padding: 0 0 0 90px;
+	padding: 0 0 0 120px;
 	margin: 0;	
 }
 
 a.profileDashboardSettings { 
-  	xfont-weight: 100;
   	font-size: 1.3em;
 	display: block;
 }
@@ -623,7 +622,6 @@ strong, .strong {
 	background: #F4F2F2;
 	min-height: 400px;
 	margin-bottom: 10px;
-	xpadding-top: 60px;
 }
 
 .contact {
@@ -705,6 +703,11 @@ strong, .strong {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+}
+
+.findWorkNegotiateBG h3 {
+	font-size: 1.6em;
+	margin-bottom: 5px;	
 }
 
 /* Find Care Page

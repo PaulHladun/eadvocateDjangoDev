@@ -17,7 +17,8 @@ urlpatterns = patterns('',
     url(r'^cp_dashboard/$', TemplateView.as_view(template_name="cp_dashboard.html"), name="cp_dashboard"),
     url(r'^rfc_contract/$', TemplateView.as_view(template_name="rfc_contract.html"), name="rfc_contract"),
     url(r'^rfc_form/$', TemplateView.as_view(template_name="rfc_form.html"), name="rfc_form"), 
-    url(r'^rfc_response/$', TemplateView.as_view(template_name="rfc_response.html"), name="rfc_response"),     
+    url(r'^rfc_response/$', TemplateView.as_view(template_name="rfc_response.html"), name="rfc_response"),    
+    url(r'^rfc_proposal/$', TemplateView.as_view(template_name="rfc_proposal.html"), name="rfc_proposal"),   
 )
 
 #from django.conf import settings

@@ -33,6 +33,7 @@
 	<link rel="stylesheet" href="{% static 'css/grid.css' %}" type="text/css" media="screen" />
 	<link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css" media="screen" />
 	<link rel="stylesheet" href="{% static 'css/nav.css' %}" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{% static 'css/rfc_forms.css' %}" type="text/css" media="screen" />
 	<link rel="stylesheet" href="{% static 'css/tablet.css' %}" type="text/css" media="screen" />
 	<link rel="stylesheet" href="{% static 'css/mobile.css' %}" type="text/css" media="screen" />
 	{% endblock %}	
@@ -43,20 +44,20 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
     <script src="{% static 'js/modernizr.custom.45114.js' %}"></script>
-    <script src="{% static 'js/functions.js' %}"></script>
     <script src="{% static 'js/jquery-ui-1.10.4.min.js' %}"></script>
     <script src="{% static 'js/select2.min.js' %}"></script>
     <script src="{% static 'js/jquery-ui-timepicker-addon.js' %}"></script>
     <script src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
     <script src="{% static 'js/fullcalendar.min.js' %}"></script>
-        <script>
+    <script src="{% static 'js/functions.js' %}"></script>
+    <!--<script>
         $(function() {
             $(':input.selectmultiple').select2();
             $('.dateinput').datepicker();
             $('.timeinput').timepicker({timeFormat: 'hh:mm tt'});
             $('.phoneinput').mask('(999) 999-9999');
         });
-    </script>
+    </script>-->
     {% endblock %}
     
 	<!-- Web Fonts

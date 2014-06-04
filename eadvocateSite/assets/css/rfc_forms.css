@@ -133,6 +133,117 @@
 	margin-top: 14px;
 }
 
+/* RFC Form Elements
+================================================== */
+
+label {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 0.9em;	
+	color: #404040;
+	position: relative;
+	padding: 0 0 1px 30px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+label:before {
+	content: "";
+	background: none;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	border: 1px solid rgba(10,158,172,0.9);
+}
+
+.checkbox label {
+	margin-bottom: 10px;
+}
+
+input[type="checkbox"]:checked + label:before {
+	content: "\2713";
+	background: rgba(10,158,172,0.9);
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+    line-height: 15px;
+    border: none;
+}
+
+.checkboxes li {
+	display: block;
+	padding: 16px 0 0 230px;	
+}
+
+textarea {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 1em;	
+	color: #404040;
+	background: white;	
+	border: 1px solid rgba(10,158,172,0.9);
+	width: 100%;
+	min-width: 50%;
+	min-height: 130px;
+	max-height: 300px;
+	padding: 10px;
+	margin: 15px 0;
+	display: inline-block;
+}
+
+input[type="text"] {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 1em;	
+	color: #404040;
+	background: white;	
+	border: 1px solid rgba(10,158,172,0.9);
+	width: 300px;
+	height: 40px;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: inline-block;	
+}
+
+input[type="text"].calendar {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 1em;	
+	color: #404040;
+	background: url(../images/calendar_Icon.png) right center no-repeat;
+	border: 1px solid rgba(10,158,172,0.9);
+	width: 300px;
+	height: 40px;
+	padding: 10px;
+	display: inline-block;
+	cursor: pointer	
+}
+
+select {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 1em;	
+	color: #404040;
+	background: url(../images/dropdown_Icon.png) right center no-repeat;	
+	left: 60px;
+	border: 1px solid rgba(10,158,172,0.9);
+	width: 300px;
+	height: 40px;
+	padding: 5px;
+	margin-bottom: 10px;
+	display: inline-block;	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
 input[type=submit], input[type=reset] {
 	background: rgba(208,46,84,0.9);
 	width: 170px;
@@ -176,6 +287,47 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
   	-moz-border: none;
   	-o-border: none;
   	border: none;
+}
+
+input:required {
+	border: 1px solid blue;
+}
+
+input:valid {
+	border: 1px solid green;
+}
+
+input:invalid {
+	border: 1px solid red;
+}
+
+::-webkit-input-placeholder {
+   color: #404040;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #404040;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #404040; 
+}
+
+:-ms-input-placeholder {  
+   color: #404040;  
+}
+
+/* Phone Landscape and Tablet Portrait
+================================================== */	  
+@media (min-width: 480px) and (max-width: 800px)
+
+{
+		
+	.rfcForm h3, .rfcForm h4 {
+		text-align: left;
+		padding-left: 10px;
+	}
+		
 }
 
 
