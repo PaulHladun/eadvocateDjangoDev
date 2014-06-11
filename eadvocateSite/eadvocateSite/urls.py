@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 
 from django.views.generic import TemplateView
+from classFormTest.views import ContactView
 from django.contrib import admin
 admin.autodiscover()
 
@@ -19,6 +20,7 @@ urlpatterns = patterns('',
     url(r'^rfc_form/$', TemplateView.as_view(template_name="rfc_form.html"), name="rfc_form"), 
     url(r'^rfc_response/$', TemplateView.as_view(template_name="rfc_response.html"), name="rfc_response"),    
     url(r'^rfc_proposal/$', TemplateView.as_view(template_name="rfc_proposal.html"), name="rfc_proposal"),   
+    url(r'^contact/$', ContactView.as_view(), name="contact"), 
 )
 
 #from django.conf import settings

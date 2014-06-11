@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static from staticfiles %}
 {% block content %}
+{% block formHeader %}
 <!-- RFC Form Header
 ================================================== -->		
 <div class="forms">
@@ -10,10 +11,11 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block patient %}
 <!-- Step One - Patient Name
 ================================================== -->	
-<form name="rfcForm" action="" method="post">
+<form name="rfcForm" action="" method="post">{% csrf_token %}
 <div class="rfcForm">
 	<div class="gridWrap960">
 		<div class="grid-50">
@@ -33,7 +35,10 @@
 		</div>
 	</div>
 </div>
+{{form.patient}}
 
+{% endblock %}
+{% block careRequestName %}
 <!-- Step Two - Care Request Name
 ================================================== -->	
 <div class="rfcForm">
@@ -50,7 +55,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block needArea %}
 <!-- Step Three - Need Area
 ================================================== -->	
 <div class="rfcForm">
@@ -108,7 +114,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block services %}
 <!-- Step Four - Services
 ================================================== -->	
 <div class="rfcForm">
@@ -166,7 +173,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block skills %}
 <!-- Step Five - Skills Required
 ================================================== -->	
 <div class="rfcForm">
@@ -224,7 +232,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block location %}
 <!-- Step Six - Location
 ================================================== -->	
 <div class="rfcForm">
@@ -341,7 +350,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block frequency %}
 <!-- Step Seven - Frequency
 ================================================== -->	
 <div class="rfcForm">
@@ -383,7 +393,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block duration %}
 <!-- Step Eight - Duration
 ================================================== -->	
 <div class="rfcForm">
@@ -405,7 +416,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block payRange %}
 <!-- Step Nine - Pay Range
 ================================================== -->	
 <div class="rfcForm">
@@ -422,7 +434,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block language %}
 <!-- Step Ten - Language
 ================================================== -->	
 <div class="rfcForm">
@@ -444,7 +457,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block gender %}
 <!-- Step Eleven - Gender
 ================================================== -->	
 <div class="rfcForm">
@@ -478,7 +492,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block backgroundCheck %}
 <!-- Step Twelve - Background Check
 ================================================== -->	
 <div class="rfcForm">
@@ -514,7 +529,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block otherRequirements %}
 <!-- Step Thirteen - Other Requirements
 ================================================== -->	
 <div class="rfcForm">
@@ -531,7 +547,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block furtherDetails %}
 <!-- Step Fourteen - Further Details
 ================================================== -->	
 <div class="rfcForm">
@@ -548,7 +565,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block responseDate %}
 <!-- Step Fifteen - Response Date
 ================================================== -->	
 <div class="rfcForm">
@@ -566,7 +584,8 @@
 		</div>
 	</div>
 </div>
-
+{% endblock %}
+{% block submitSave %}
 <div class="gridWrap960">
 	<div class="grid-25">
 		<input type="submit" name="submit" value="submit"/>
@@ -580,7 +599,7 @@
 	<div class="grid-25"><!--- filler -->
 	</div>
 </div>
-
+{% endblock %}
 </form>
 {% endblock %}
 

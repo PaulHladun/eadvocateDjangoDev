@@ -330,4 +330,17 @@ input:invalid {
 		
 }
 
+/* Phone - Landscapte and Portrait
+================================================== */	    
+@media (max-width: 480px) 
+
+{
+	
+	.rfcForm h3, .rfcForm h4 {
+		text-align: left;
+		padding-left: 10px;
+	}
+		
+}
+
 

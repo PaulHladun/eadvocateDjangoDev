@@ -41,6 +41,9 @@ INSTALLED_APPS = (
     'south',
     'baseApp',
     'rfc_proposal',
+    'formTemplate',
+    'classFormTest',
+    'rfc_proposal_test',
 )
 
 MIDDLEWARE_CLASSES = (
