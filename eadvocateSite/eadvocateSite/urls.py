@@ -21,6 +21,7 @@ urlpatterns = patterns('',
     url(r'^rfc_response/$', TemplateView.as_view(template_name="rfc_response.html"), name="rfc_response"),    
     url(r'^rfc_proposal/$', TemplateView.as_view(template_name="rfc_proposal.html"), name="rfc_proposal"),   
     url(r'^contact/$', ContactView.as_view(), name="contact"), 
+    url(r'^rfc_proposal_test/$', TemplateView.as_view(template_name="rfc_proposal.html"), name="rfc_proposal_test"), 
 )
 
 #from django.conf import settings

@@ -77,6 +77,10 @@
 	  	margin-bottom: 30px;
 	}
 
+	.howWeHelpLG1 {
+	   	height: 360px;		
+	}
+	
 /* Find Work Banners
 =================================== */	
 
@@ -88,6 +92,7 @@
 	.findWorkLG3 {
 		background: url(../images/findWork/findWorkLG3_Mobile.jpg) center center no-repeat;
 	  	height: 360px;
+	  	margin-top: 30px;
 	}
 	
 /* Find Care Banners
@@ -96,7 +101,7 @@
 	.findCareLG1 {
 		background: url(../images/findCare/findCareLG1_Mobile.jpg) center center no-repeat;
    		height: 360px;
-		padding-top: 100px;
+		padding-top: 0;
 	}
 	
 	.findCareLG2 {
@@ -106,7 +111,7 @@
 
 	.findCareLG3 {
 		background: url(../images/findCare/findCareLG3_Mobile.jpg) center center no-repeat;
-	  	height: 360px;
+	  	height: 380px;
 	}
 
 /* Overlays
@@ -160,6 +165,7 @@
 
 	a.infoLink, a.infoLinkAlt, a.edit, a.discuss {
 		font-size: 1.3em;
+		line-height: 20px;
 		margin: 5px auto;
 	}
 	

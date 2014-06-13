@@ -1,3 +1,4 @@
 from django.contrib import admin
+from rfc_proposal_test.models import Poll
 
-# Register your models here.
+admin.site.register(Poll)

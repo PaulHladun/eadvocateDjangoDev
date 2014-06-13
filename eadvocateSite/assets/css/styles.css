@@ -750,6 +750,11 @@ footer li a:hover {
 	color: #0A9EAC;
 }
 
+footer a.current {
+	color: #0A9EAC;
+   	cursor: default;
+}
+
 footer h5, footer h5 a {
 	font-weight: 400;
 	color: white;
